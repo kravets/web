@@ -1,2 +1,0 @@
-# web
-Some web resources

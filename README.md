@@ -1,2 +1,2 @@
 # web
-Some web resources
+Some immutable web resources, load https://kravets.github.io/web/
