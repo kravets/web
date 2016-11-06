@@ -311,7 +311,6 @@
         if(base==20&&words==12&& !/^[A-Ja-j0-9]{31}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 31 digits of 0-9, A-J");raise;};
         if(base==20&&words==24&& !/^[A-Ja-j0-9]{60}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 60 digits of 0-9, A-J");raise;};
         if(base==16&&words==12&& !/^[A-Fa-f0-9]{32}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 32 digits of 0-9, A-F");raise;};
-        if(base==16&&words==18&& !/^[A-Fa-f0-9]{46}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 46 digits of 0-9, A-F");raise;};
         if(base==16&&words==24&& !/^[A-Fa-f0-9]{64}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 64 digits of 0-9, A-F");raise;};
         if(base==2&&words==12&& !/^[0-1]{128}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 128 digits of 0-1");raise;};
         if(base==2&&words==24&& !/^[0-1]{256}$/.test(dice_rolls) ){alert("Entropy incorrect\nPlease use 256 digits of 0-1");raise;};
@@ -333,13 +332,10 @@
         }
         
         var pad128 = "00000000000000000000000000000000"
-        var pad192 = "000000000000000000000000000000000000000000000000"
         var pad256 = "0000000000000000000000000000000000000000000000000000000000000000"
         
         if(words==12){
             entropy = pad128.substring(0, pad128.length - entropy.length) + entropy
-        } else if (words == 18){
-            entropy = pad192.substring(0, pad192.length - entropy.length) + entropy
         } else {
             entropy = pad256.substring(0, pad256.length - entropy.length) + entropy
         }
@@ -744,4 +740,3 @@
         $('#crCurrency ul li a').on('click', crChange);
 
     });
-})(jQuery);
