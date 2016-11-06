@@ -338,7 +338,7 @@
         
         if(words==12){
             entropy = pad128.substring(0, pad128.length - entropy.length) + entropy
-        } else if (words ==16){
+        } else if (words == 18){
             entropy = pad192.substring(0, pad192.length - entropy.length) + entropy
         } else {
             entropy = pad256.substring(0, pad256.length - entropy.length) + entropy
