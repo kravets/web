@@ -1,4 +1,4 @@
 # web
 Some immutable web resources, load 
-http://hawaiki.org/
+http://moatbridge.com/
 https://kravets.github.io/web/
